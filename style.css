@@ -1,9 +1,10 @@
+/* Body */
+
 body {
 
     background-color: #EDEDED;
 
 }
-
 
 header {
 
@@ -11,87 +12,142 @@ header {
      
 }
 
+/* Navbar */
 
-header::after {
-
-    content: "";
-    display: table;
-    clear: both
-
-}
-
-
-.navigation {
+.navbar {
     
-    width: 95%;
     height: 60px;
-    padding: 0px;
-    margin: auto;
+    padding: 30px;
     
-    
+  
 }
 
-.logo {
+.navbar-brand {
 
-    float: left;
     padding: 15px;
-    color: white;
     background-color: #0BADA6;
-    font-size: 22px;
-    cursor: pointer;
+    font-size: 20px;
     width: 150px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
+    margin: 50px;
+    color:white;
     
 }
 
-.logo:hover{
+.navbar-brand:hover {
 
     color: black
-
 }
 
-nav {
+.nav-item:hover {
 
-    float: right;
+    background-color:#EDEDED;
     
 }
 
-nav ul {
+.dropdown:hover .dropdown-menu  {
 
-    list-style: none;
+    display: block
+
+} 
+
+
+/* Images */
+
+img{
+
+    width:100% !important;
+    height:100% !important;
+
+}
+.active, .panel:hover{
+
+    border-color:#0BADA6;
+    border-style: solid; 
     
+}
+.vizualization{
+
+    width:50% !important;
+    height:50% !important;
+
+}
+
+/* Title Class  */
+
+.title{
+
+    color: #0BADA6;  
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder; 
+    padding-top: 25px; 
+
+}
+
+/* Paragraph Element */
+
+p{
+
+    color: #6D8092;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px; 
+
+}
+
+/* Box Class */
+
+.box {
+
+    margin-top: 60px;  
+    padding: 30px; 
+    color:black;
+    background-color: white; 
     
 }
 
+/* Table */
 
-nav ul li {
+.table{
 
-    display: inline-block;
-    padding: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
-    margin-bottom: -10px
-   
-    
+    font-size: 15px; 
+    border-top-color: white !important; 
+
 }
 
-nav ul li a {
+/* Footer */
 
-    color: grey;
-      
+footer{
+
+    background-color: #666666; 
+    border-top-style: solid; 
+    border-top-width: 5px; 
+    border-top-color: #0BADA6;
+    color: white; 
+    min-height: 55px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px; 
+    text-align: center; 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 15px; 
+
 }
 
-nav ul li a:hover{
+/* Comparison */
 
-    background-color: #EDEDED;
+#p {
+
     color: black;
-    padding: 10px;
-    margin: -10px
+    font-size: 14px
 
 }
 
-    
+#comparison_title {
 
+    text-align: center;
+    padding-top: 0px
+
+}

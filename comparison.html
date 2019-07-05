@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-sm bg-light navbar-black">
 
         <!-- Brand -->
-
+    
         <strong><a class="navbar-brand" href = "index.html">Lattitude</a></strong>
         
         <!-- Links -->
@@ -47,100 +47,80 @@
                 </ul>
 
         </div>
-
-    
+        
     </nav>
 
+    
     <div class="container">
 
         <div class="row">
-
-            <div class="col-lg-7 col-md-12">
-
-                <!-- Left box  -->
+        
+    
+            <div class="col-md-12"></div>
+            
+                <!-- Right Box -->
 
                 <div class="box">
 
-                <h3 class="title">Summary: Latitude vs. X</h3>
+                <h2 class="title">Comparison: Latitude vs X</h2>
 
                 <hr>
 
-                <img src="Resources/images/Fig1.png" class="vizualization rounded float-left" alt="Max Temperature Graph">
+                <p id = "p"> Click any plot to get an in-depth analysis</p>
 
-                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
-                accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over
-                500 cities.</p>
+                <div class="container" style = "padding-bottom :60px">
 
-                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
-                Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the
-                source data and visualizations created as part of the analysis, as well as explanations and descriptions of
-                any trends and correlations witnessed.</p>
+                    <div class="row">
 
-            </div>
+                        <div class="col-6" style = "padding: 30px">
+                            
+                            <div class="title" id = "comparison_title">vs. Max Temperature</div>
+                            <a href="max_temperature.html">
+                            <img class="panel" src="Resources/images/Fig1.png" alt="Max Temperature Image">
+                            </a>
 
-        </div>
-
-            <div class="col-lg-5  col-md-12">
-            
-                    <!-- Right Box -->
-
-                    <div class="box">
-
-                    <h5 class="title">Visualizations</h5>
-
-                    <hr>
-
-                    <div class="container">
-
-                        <div class="row" style="padding-bottom: 30px;">
-
-                            <div class="col-6">
-
-                                <a href="max_temperature.html">
-                                <img class="panel" src="Resources/images/Fig1.png" alt="Max Temperature Image">
-                                </a>
-
-                            </div>
-
-                            <div class="col-6">
-
-                                <a href="humidity.html">
-                                <img class="panel" src="Resources/images/Fig2.png" alt="Humidity Graph">
-                                </a>
-
-                            </div>
                         </div>
-    
-                        <div class="row" style="padding-bottom: 30px;">
 
-                            <div class="col-6">
+                        <div class="col-6" style="padding: 30px">
 
-                                <a href="cloudiness.html">
-                                <img class="panel" src="Resources/images/Fig3.png" alt="Cloudiness Graph">
-                                </a>
+                            <div class="title" id = "comparison_title">vs. Humidity</div>
+                            <a href="humidity.html">
+                            <img class="panel" src="Resources/images/Fig2.png" alt="Humidity Graph">
+                            </a>
 
-                            </div>
-
-                            <div class="col-6">
-
-                                <a href="wind_speed.html">
-                                <img class="panel" src="Resources/images/Fig4.png" alt="Wind Speed Graph">
-                                </a>
-
-                            </div>
-    
                         </div>
 
                     </div>
-    
-                </div>
-                
-            </div>
-        
-        </div>
-    
-    </div>
 
+                    <div class = "row">
+
+                        <div class="col-6" style = "padding: 30px">
+
+                            <div class="title" id = "comparison_title">vs. Cloudiness</div>
+                            <a href="cloudiness.html">
+                            <img class="panel" src="Resources/images/Fig3.png" alt="Cloudiness Graph">
+                            </a>
+
+                        </div>
+
+                        <div class="col-6" style = "padding: 30px">
+
+                            <div class="title" id = "comparison_title">vs. Wind Speed</div>
+                            <a href="wind_speed.html">
+                            <img class="panel" src="Resources/images/Fig4.png" alt="Wind Speed Graph">
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+        </div>
+
+    </div>
 
     <!-- Footer  -->
 
@@ -155,6 +135,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-</body>
 
-</html>
+</body>
