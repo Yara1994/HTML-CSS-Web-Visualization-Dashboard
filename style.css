@@ -137,18 +137,35 @@ footer{
 
 }
 
-/* Comparison */
 
-#p {
+/* Media Queries */
 
-    color: black;
-    font-size: 14px
+@media(max-width: 992px){
 
-}
+    .navbar-expand-sm{
+    background-color: #0BADA6 !important;
 
-#comparison_title {
+    }
 
-    text-align: center;
-    padding-top: 0px
+    .navbar{
+
+        max-height: none; 
+        padding: inherit;
+
+    }
+
+    .navbar-nav{
+
+        margin: inherit; 
+        background-color: white; 
+
+    }
+
+    .navbar-brand{
+
+        padding: 10px !important; 
+
+    }
+
 
 }
