@@ -3,89 +3,91 @@
 
 <head> 
 
-    <meta charset="UTF-8">
+    <meta charset = "UTF-8">
     <title> Web Visualization Dashboard </title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel = "stylesheet" type = "text/css" href = "style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-sm bg-light navbar-black">
+    <!-- Navbar -->
+
+    <nav class = "navbar navbar-expand-sm bg-light navbar-black">
 
         <!-- Brand -->
-    
-        <strong><a class="navbar-brand" href = "index.html">Lattitude</a></strong>
+
+        <strong><a class = "navbar-brand" href = "index.html">Lattitude</a></strong>
         
         <!-- Links -->
 
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class = "collapse navbar-collapse" id = "navbarNavDropdown">
 
-                <ul class="navbar-nav ml-auto" style= "cursor: pointer">
+            <ul class = "navbar-nav ml-auto" style = "cursor: pointer">
 
-                    <li class="nav-item dropdown">
+                <li class = "nav-item dropdown">
 
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style= "color:grey">Plots</a>
+                    <a class = "nav-link dropdown-toggle" href = "#" id = "navbarDropdownMenuLink" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false"  style = "color:grey">Plots</a>
 
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                    <div class = "dropdown-menu" aria-labelledby = "navbarDropdownMenuLink" >
 
-                        <a class="dropdown-item">Max Temperature</a>
-                        <a class="dropdown-item">Humidity</a>
-                        <a class="dropdown-item">Cloudiness</a>
-                        <a class="dropdown-item">Wind Speed</a>
+                        <a href = "max_temperature.html" class = "dropdown-item">Max Temperature</a>
+                        <a href = "humidity.html" class = "dropdown-item">Humidity</a>
+                        <a href = "cloudiness.html" class = "dropdown-item">Cloudiness</a>
+                        <a href = "wind_speed.html" class = "dropdown-item">Wind Speed</a>
 
                     </div>
 
-                    </li>
+                </li>
 
-                    <li class="nav-item"><a class="nav-link" style= "color:grey">Comparison</a></li>
+                <li class = "nav-item"><a href = "comparison.html" class = "nav-link" style = "color:grey">Comparison</a></li>
 
-                    <li class="nav-item"><a class="nav-link" style= "color:grey">Data</a></li>
-        
-                </ul>
+                <li class = "nav-item"><a class = "nav-link" style = "color:grey">Data</a></li>
+    
+            </ul>
 
         </div>
-        
+
     </nav>
 
+    <!-- Main Content -->
+
+    <div class = "container">
+
+        <div class = "row">
     
-    <div class="container">
+            <div class = "col-md-12"></div>
 
-        <div class="row">
-        
-    
-            <div class="col-md-12"></div>
-            
-                <!-- Right Box -->
+                <div class = "box">
 
-                <div class="box">
-
-                <h2 class="title">Comparison: Latitude vs X</h2>
+                <h2 class = "title">Comparison: Latitude vs X</h2>
 
                 <hr>
 
                 <p id = "p"> Click any plot to get an in-depth analysis</p>
 
-                <div class="container" style = "padding-bottom :60px">
+                <div class = "container" style = "padding-bottom :60px">
 
-                    <div class="row">
+                    <div class = "row">
 
-                        <div class="col-6" style = "padding: 30px">
+                        <div class = "col-6" style = "padding: 30px">
                             
-                            <div class="title" id = "comparison_title">vs. Max Temperature</div>
-                            <a href="max_temperature.html">
-                            <img class="panel" src="Resources/images/Fig1.png" alt="Max Temperature Image">
-                            </a>
+                            <div class = "title" id = "comparison_title">vs. Max Temperature</div>
+
+                            <a href = "max_temperature.html">
+                            <img class = "panel" src = "Resources/images/Fig1.png" alt = "Max Temperature Image">
+                            </a>    
 
                         </div>
 
-                        <div class="col-6" style="padding: 30px">
+                        <div class = "col-6" style =  "padding: 30px">
 
-                            <div class="title" id = "comparison_title">vs. Humidity</div>
-                            <a href="humidity.html">
-                            <img class="panel" src="Resources/images/Fig2.png" alt="Humidity Graph">
+                            <div class = "title" id = "comparison_title">vs. Humidity</div>
+
+                            <a href = "humidity.html">
+                            <img class = "panel" src = "Resources/images/Fig2.png" alt = "Humidity Graph">
                             </a>
 
                         </div>
@@ -94,20 +96,22 @@
 
                     <div class = "row">
 
-                        <div class="col-6" style = "padding: 30px">
+                        <div class = "col-6" style = "padding: 30px">
 
-                            <div class="title" id = "comparison_title">vs. Cloudiness</div>
-                            <a href="cloudiness.html">
-                            <img class="panel" src="Resources/images/Fig3.png" alt="Cloudiness Graph">
+                            <div class = "title" id = "comparison_title">vs. Cloudiness</div>
+
+                            <a href = "cloudiness.html">
+                            <img class = "panel" src = "Resources/images/Fig3.png" alt = "Cloudiness Graph">
                             </a>
 
                         </div>
 
-                        <div class="col-6" style = "padding: 30px">
+                        <div class = "col-6" style = "padding: 30px">
 
-                            <div class="title" id = "comparison_title">vs. Wind Speed</div>
-                            <a href="wind_speed.html">
-                            <img class="panel" src="Resources/images/Fig4.png" alt="Wind Speed Graph">
+                            <div class = "title" id = "comparison_title">vs. Wind Speed</div>
+
+                            <a href = "wind_speed.html">
+                            <img class = "panel" src = "Resources/images/Fig4.png" alt = "Wind Speed Graph">
                             </a>
 
                         </div>
@@ -126,10 +130,11 @@
 
     <footer>
 
-        <div class="footer"> &copy; Copyright  Mykyta Yarovoi 2019</div>
+        <div class = "footer"> &copy; Copyright  Mykyta Yarovoi 2019</div>
 
     </footer>
 
+    <!-- Bootstrap script -->
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -137,3 +142,5 @@
 
 
 </body>
+
+</html>

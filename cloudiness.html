@@ -25,32 +25,31 @@
 
         <div class = "collapse navbar-collapse" id = "navbarNavDropdown">
 
-                <ul class = "navbar-nav ml-auto" style = "cursor: pointer">
+            <ul class = "navbar-nav ml-auto" style = "cursor: pointer">
 
-                    <li class = "nav-item dropdown">
+                <li class = "nav-item dropdown">
 
-                        <a class = "nav-link dropdown-toggle" href = "#" id = "navbarDropdownMenuLink" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false"  style = "color:grey">Plots</a>
+                    <a class = "nav-link dropdown-toggle" href = "#" id = "navbarDropdownMenuLink" data-toggle = "dropdown" aria-haspopup = "true" aria-expanded = "false"  style = "color:grey">Plots</a>
 
-                        <div class = "dropdown-menu" aria-labelledby = "navbarDropdownMenuLink" >
+                    <div class = "dropdown-menu" aria-labelledby = "navbarDropdownMenuLink" >
 
-                            <a href = "max_temperature.html" class = "dropdown-item">Max Temperature</a>
-                            <a href = "humidity.html" class = "dropdown-item">Humidity</a>
-                            <a href = "cloudiness.html" class = "dropdown-item">Cloudiness</a>
-                            <a href = "wind_speed.html" class = "dropdown-item">Wind Speed</a>
+                        <a href = "max_temperature.html" class = "dropdown-item">Max Temperature</a>
+                        <a href = "humidity.html" class = "dropdown-item">Humidity</a>
+                        <a href = "cloudiness.html" class = "dropdown-item">Cloudiness</a>
+                        <a href = "wind_speed.html" class = "dropdown-item">Wind Speed</a>
 
-                        </div>
+                    </div>
 
-                    </li>
+                </li>
 
-                    <li class = "nav-item"><a href = "comparison.html" class = "nav-link" style = "color:grey">Comparison</a></li>
+                <li class = "nav-item"><a href = "comparison.html" class = "nav-link" style = "color:grey">Comparison</a></li>
 
-                    <li class = "nav-item"><a class = "nav-link" style = "color:grey">Data</a></li>
-        
-                </ul>
+                <li class = "nav-item"><a class = "nav-link" style = "color:grey">Data</a></li>
+    
+            </ul>
 
         </div>
 
-    
     </nav>
 
     <!-- Main Content -->
@@ -63,32 +62,28 @@
 
             <div class = "col-lg-7 col-md-12">
 
-                <div class = "box">
+                <div class = "box" style = "padding-bottom: 5px;">
 
-                <h3 class = "title">Summary: Latitude vs. X</h3>
+                    <h3 class = "title">Cloudiness</h3>
 
-                <hr>
+                    <hr>
 
-                <img src = "Resources/images/Fig1.png" class = "vizualization rounded float-left" alt = "Max Temperature Graph">
+                    <img src = "Resources/images/Fig3.png" alt = "Cloudiness Graph">
 
-                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
-                accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over
-                500 cities.</p>
+                    <p>Cloudiness does not show a strong correlation to latitude. The visualization shows a great variety of
+                        cloudiness percentages at different latitudes. Therefore, we cannot conclude that there is a conclusive
+                        pattern between cloudiness and latitude.
+                    </p>
 
-                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
-                Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the
-                source data and visualizations created as part of the analysis, as well as explanations and descriptions of
-                any trends and correlations witnessed.</p>
+                </div>
 
             </div>
 
-        </div>
-
             <!-- Right Box -->
 
-            <div class = "col-lg-5  col-md-12">
+            <div class = "col-lg-5 col-md-12">
 
-                    <div class = "box">
+                <div class = "box">
 
                     <h5 class = "title">Visualizations</h5>
 
@@ -115,13 +110,13 @@
                             </div>
 
                         </div>
-    
+
                         <div class = "row" style = "padding-bottom: 30px;">
 
                             <div class = "col-6">
 
                                 <a href = "cloudiness.html">
-                                <img class = "panel" src = "Resources/images/Fig3.png" alt = "Cloudiness Graph">
+                                <img class = "panel active" src = "Resources/images/Fig3.png" alt = "Cloudiness Graph">
                                 </a>
 
                             </div>
@@ -133,18 +128,19 @@
                                 </a>
 
                             </div>
-    
+
                         </div>
 
                     </div>
-    
+
                 </div>
-                
+
             </div>
-        
+
         </div>
     
     </div>
+
 
 
     <!-- Footer  -->
@@ -156,10 +152,11 @@
     </footer>
 
     <!-- Bootstrap script -->
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 
 </body>
 
